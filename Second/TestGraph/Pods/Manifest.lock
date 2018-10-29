@@ -1,0 +1,35 @@
+PODS:
+  - Charts (3.2.1):
+    - Charts/Core (= 3.2.1)
+  - Charts/Core (3.2.1)
+  - RxSwift (4.3.1)
+  - SnapKit (4.2.0)
+  - Swinject (2.5.0)
+  - SwinjectStoryboard (2.1.0):
+    - Swinject (~> 2.5)
+
+DEPENDENCIES:
+  - Charts
+  - RxSwift
+  - SnapKit
+  - Swinject
+  - SwinjectStoryboard
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Charts
+    - RxSwift
+    - SnapKit
+    - Swinject
+    - SwinjectStoryboard
+
+SPEC CHECKSUMS:
+  Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
+  SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
+
+PODFILE CHECKSUM: 06d12a5dfa05575317ebd544a39afdc80fdcded0
+
+COCOAPODS: 1.5.3

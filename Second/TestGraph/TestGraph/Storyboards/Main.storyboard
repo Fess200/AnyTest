@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Oc-7Z-7cl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Graph Container View Controller-->
+        <scene sceneID="mA4-tO-aXZ">
+            <objects>
+                <viewController storyboardIdentifier="GraphContainerViewController" id="1Oc-7Z-7cl" customClass="GraphContainerViewController" customModule="TestGraph" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Omb-Dd-kLr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nct-Ia-rh7">
+                                <rect key="frame" x="20" y="60" width="335" height="30"/>
+                                <connections>
+                                    <action selector="onDataType:" destination="1Oc-7Z-7cl" eventType="touchUpInside" id="hLB-wa-WXh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uQm-cO-Afs">
+                                <rect key="frame" x="0.0" y="100" width="375" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="uQm-cO-Afs" secondAttribute="height" multiplier="1:1" id="oke-zl-ZON"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NmH-hQ-9KU">
+                                <rect key="frame" x="30" y="485" width="79" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="i3U-BS-YM1"/>
+                                </constraints>
+                                <state key="normal" title="Debenture1"/>
+                                <connections>
+                                    <action selector="onDebentureType:" destination="1Oc-7Z-7cl" eventType="touchUpInside" id="4oi-oU-Cvv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W96-Zj-KKP">
+                                <rect key="frame" x="264" y="485" width="81" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="XUC-Gx-QmZ"/>
+                                </constraints>
+                                <state key="normal" title="Debenture2"/>
+                                <connections>
+                                    <action selector="onDebentureType:" destination="1Oc-7Z-7cl" eventType="touchUpInside" id="P5t-pe-Fxf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uQm-cO-Afs" firstAttribute="leading" secondItem="fQX-sk-qod" secondAttribute="leading" id="5J6-qK-PRz"/>
+                            <constraint firstItem="Nct-Ia-rh7" firstAttribute="leading" secondItem="fQX-sk-qod" secondAttribute="leading" constant="20" id="6cE-ZM-QxZ"/>
+                            <constraint firstItem="uQm-cO-Afs" firstAttribute="top" secondItem="Nct-Ia-rh7" secondAttribute="bottom" constant="10" id="COR-km-DUR"/>
+                            <constraint firstItem="W96-Zj-KKP" firstAttribute="height" secondItem="NmH-hQ-9KU" secondAttribute="height" id="F0R-xV-Tae"/>
+                            <constraint firstItem="NmH-hQ-9KU" firstAttribute="top" secondItem="uQm-cO-Afs" secondAttribute="bottom" constant="10" id="FHQ-bx-hM7"/>
+                            <constraint firstItem="Nct-Ia-rh7" firstAttribute="centerX" secondItem="Omb-Dd-kLr" secondAttribute="centerX" id="Q4P-Xk-GK6"/>
+                            <constraint firstItem="NmH-hQ-9KU" firstAttribute="leading" secondItem="fQX-sk-qod" secondAttribute="leading" constant="30" id="R04-zj-4Od"/>
+                            <constraint firstItem="Nct-Ia-rh7" firstAttribute="top" secondItem="fQX-sk-qod" secondAttribute="top" constant="40" id="Xm4-8Y-ATj"/>
+                            <constraint firstItem="fQX-sk-qod" firstAttribute="trailing" secondItem="uQm-cO-Afs" secondAttribute="trailing" id="dhl-Hj-1y7"/>
+                            <constraint firstItem="W96-Zj-KKP" firstAttribute="centerY" secondItem="NmH-hQ-9KU" secondAttribute="centerY" id="irU-lw-sSr"/>
+                            <constraint firstItem="fQX-sk-qod" firstAttribute="trailing" secondItem="W96-Zj-KKP" secondAttribute="trailing" constant="30" id="tKB-M7-0U1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fQX-sk-qod"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonDataType" destination="Nct-Ia-rh7" id="wTH-H7-I2p"/>
+                        <outlet property="containerGraph" destination="uQm-cO-Afs" id="s0B-PN-gXo"/>
+                        <outletCollection property="debentureButtons" destination="NmH-hQ-9KU" collectionClass="NSMutableArray" id="Q5r-Xx-JBk"/>
+                        <outletCollection property="debentureButtons" destination="W96-Zj-KKP" collectionClass="NSMutableArray" id="Vjo-He-NBe"/>
+                        <segue destination="z0C-N9-plP" kind="presentation" identifier="segueToSelectData" modalPresentationStyle="overFullScreen" id="ODE-wm-xKL"/>
+                        <segue destination="b97-Or-Ny1" kind="custom" identifier="segueToGraph" customClass="ViperEmbedSegue" customModule="TestGraph" customModuleProvider="target" id="yBV-zv-a7W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ds-qR-k8D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+        <!--SelectDataViewController-->
+        <scene sceneID="KvK-Bx-ehy">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Common" referencedIdentifier="SelectDataViewController" id="z0C-N9-plP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OK2-Sb-7xe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="-151"/>
+        </scene>
+        <!--GraphViewController-->
+        <scene sceneID="vdp-uj-hbb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Common" referencedIdentifier="GraphViewController" id="b97-Or-Ny1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GCD-rT-QW6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819" y="-32"/>
+        </scene>
+    </scenes>
+</document>

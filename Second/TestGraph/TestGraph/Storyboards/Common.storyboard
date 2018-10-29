@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Select Data View Controller-->
+        <scene sceneID="QbC-XC-iv1">
+            <objects>
+                <viewController storyboardIdentifier="SelectDataViewController" id="MNL-EU-fzX" customClass="SelectDataViewController" customModule="TestGraph" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rP7-km-p0H"/>
+                        <viewControllerLayoutGuide type="bottom" id="rAe-oG-0W6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UtP-is-NWt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cg8-1I-5M9">
+                                <rect key="frame" x="0.0" y="401" width="375" height="266"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FCi-vo-vbL">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="216"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="MNL-EU-fzX" id="hJG-tn-O2i"/>
+                                            <outlet property="delegate" destination="MNL-EU-fzX" id="eXs-Kl-4fZ"/>
+                                        </connections>
+                                    </pickerView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFN-Ub-TzV">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgZ-Pl-tBt">
+                                                <rect key="frame" x="298" y="10" width="62" height="30"/>
+                                                <state key="normal" title="Выбрать"/>
+                                                <connections>
+                                                    <action selector="onTapSelect:" destination="MNL-EU-fzX" eventType="touchUpInside" id="D5X-MY-Cim"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAK-LQ-sYO">
+                                                <rect key="frame" x="15" y="10" width="56" height="30"/>
+                                                <state key="normal" title="Отмена"/>
+                                                <connections>
+                                                    <action selector="onTapCancel:" destination="MNL-EU-fzX" eventType="touchUpInside" id="9Es-GU-pNC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="XAK-LQ-sYO" firstAttribute="leading" secondItem="fFN-Ub-TzV" secondAttribute="leading" constant="15" id="5Ji-mu-jGt"/>
+                                            <constraint firstAttribute="height" constant="50" id="BGp-Ay-pgm"/>
+                                            <constraint firstItem="pgZ-Pl-tBt" firstAttribute="centerY" secondItem="fFN-Ub-TzV" secondAttribute="centerY" id="Fhu-4X-mBn"/>
+                                            <constraint firstAttribute="trailing" secondItem="pgZ-Pl-tBt" secondAttribute="trailing" constant="15" id="SA5-Vc-2Ed"/>
+                                            <constraint firstItem="XAK-LQ-sYO" firstAttribute="centerY" secondItem="fFN-Ub-TzV" secondAttribute="centerY" id="uXa-oh-IaO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FCi-vo-vbL" firstAttribute="top" secondItem="fFN-Ub-TzV" secondAttribute="bottom" id="1xG-vi-gFe"/>
+                                    <constraint firstItem="fFN-Ub-TzV" firstAttribute="leading" secondItem="cg8-1I-5M9" secondAttribute="leading" id="8yJ-gx-WZi"/>
+                                    <constraint firstAttribute="bottom" secondItem="FCi-vo-vbL" secondAttribute="bottom" id="F2B-TT-tmk"/>
+                                    <constraint firstItem="FCi-vo-vbL" firstAttribute="leading" secondItem="cg8-1I-5M9" secondAttribute="leading" id="Mem-K0-lW1"/>
+                                    <constraint firstItem="fFN-Ub-TzV" firstAttribute="top" secondItem="cg8-1I-5M9" secondAttribute="top" id="bNK-JW-Www"/>
+                                    <constraint firstAttribute="trailing" secondItem="FCi-vo-vbL" secondAttribute="trailing" id="kDf-pa-pMt"/>
+                                    <constraint firstAttribute="trailing" secondItem="fFN-Ub-TzV" secondAttribute="trailing" id="uee-Xb-rFo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cg8-1I-5M9" secondAttribute="trailing" id="5Py-oY-qm1"/>
+                            <constraint firstItem="cg8-1I-5M9" firstAttribute="leading" secondItem="UtP-is-NWt" secondAttribute="leading" id="F3e-TZ-BVr"/>
+                            <constraint firstAttribute="bottom" secondItem="cg8-1I-5M9" secondAttribute="bottom" id="XXA-12-33d"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataPicker" destination="FCi-vo-vbL" id="YLb-DU-Tcg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5jZ-JO-DhN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-196" y="94"/>
+        </scene>
+        <!--Graph View Controller-->
+        <scene sceneID="p3b-OP-fGW">
+            <objects>
+                <viewController storyboardIdentifier="GraphViewController" id="HVN-bF-DtV" customClass="GraphViewController" customModule="TestGraph" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fE4-Sr-5Hi"/>
+                        <viewControllerLayoutGuide type="bottom" id="khw-GQ-1mh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LAf-EL-VUl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y69-62-kPT" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Y69-62-kPT" secondAttribute="trailing" id="7Uk-Q5-83O"/>
+                            <constraint firstItem="Y69-62-kPT" firstAttribute="top" secondItem="LAf-EL-VUl" secondAttribute="top" id="N65-gp-QJ9"/>
+                            <constraint firstAttribute="bottom" secondItem="Y69-62-kPT" secondAttribute="bottom" id="cMf-GA-N99"/>
+                            <constraint firstItem="Y69-62-kPT" firstAttribute="leading" secondItem="LAf-EL-VUl" secondAttribute="leading" id="wyK-KA-IuM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="viewChart" destination="Y69-62-kPT" id="0mK-ri-aeH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDx-Au-ZXp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768.79999999999995" y="67.016491754122939"/>
+        </scene>
+    </scenes>
+</document>
